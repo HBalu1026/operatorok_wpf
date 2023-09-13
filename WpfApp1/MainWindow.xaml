@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Click="fajlBeolvasas">Fájl kiválasztása</Button>
+        <Label Grid.Column="1"
+               x:Name="lbEleres">kiskutya</Label>
+        </Grid>
+        <Label Grid.Row="1"
+               x:Name="lbMasodikFeladat">2. feladat: </Label>
+        <Label Grid.Row="2"
+               x:Name="lbHarmadikFeladat">3. feladat: </Label>
+        <Label Grid.Row="3"
+               x:Name="lbNegyedikFeladat">4. feladat: </Label>
+        <Label Grid.Row="4"
+               x:Name="lbÖtödikFeladat">5. feladat: </Label>
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label>7. feladat: Kérek egy kifejezést (pl.: 1+1): </Label>
+            <TextBox Grid.Column="1" Margin="0,0,200,30"/>
+        </Grid>
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label>8. feladat: </Label>
+            <TextBox Grid.Column="1" Margin="50,0,50,30"/>
+            <Button Grid.Column="2">Fájlba mentés</Button>
+        </Grid>
+    </Grid>
+</Window>
